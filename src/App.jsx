@@ -5,7 +5,7 @@ import Header from "./assets/components/Header";
 import Calculator from "./assets/components/Calculator";
 
 function App() {
-  const [obj, setObj] = useState({ Calculator });
+  const [tab, setTab] = useState({ Calculator });
   const [counter, setCounter] = useState(0);
 
   return (
@@ -15,13 +15,14 @@ function App() {
         <button
           className="add"
           onClick={() => {
-            const objCopy = { ...obj };
+            const tabCopy = [...tab];
             tabCopy.push({ Calculator });
-            setTab(objCopy);
+            setTab(tabCopy);
           }}
         >
           Add counter
         </button>
+
         <Calculator counter={counter} setCounter={setCounter} />
       </section>
       <Footer />
