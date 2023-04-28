@@ -1,8 +1,8 @@
 const Header = () => {
   return (
     <header>
-      <i className="fa-solid fa-calculator fa-xl"></i>
-      <h1> React Counte V2</h1>
+      <i className="fa-solid fa-stopwatch"></i>
+      <h1> React Counter V2</h1>
     </header>
   );
 };
